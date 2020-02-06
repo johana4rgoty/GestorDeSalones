@@ -94,3 +94,25 @@ Tareas para el paso 1
 4. Habilitar la opcion de cambiar contraseña para el cordinador
 5. Habilitar la opcion de cambiar los datos del cordinador
 
+------------------------------------------------------------------------------------------------
+
+**Modelo de Clases (Version a discutir)**
+
+PROGRAMA: lista de MATERIAS 
+
+MATERIA: nombre_materia, codigo, lista de DOCENTES, cupo_materia, semetre
+(Inconveniete: Materias pueden tener el mismo codigo si son de otro grupo)
+(Posible solución: busqueda por nombre de materia con grupo ej: materia1-A --> nombre llave primaria)
+
+DOCENTE: nombre_docente
+
+SALON: nombre_salon, cupo_salon
+
+HORA: estado (Ocupado) 
+--> son 13 horas por día: 7am - 8pm 
+--> son 6 días: lunes - sabado
+--> total de 78 horas por semana
+(Inconveniente: Asignación por tiempos en el semestre por rote)
+(Posible solución: Crear horas para todo el semestre (agregando meses, dias, horas) en una clase mas grande llamada SEMESTRE)
+(Posible solución: Manejo de Clase tiempo en calendario)
+------------------------------------------------------------------------------------------------
