@@ -1,0 +1,11 @@
+    1  git clone https://github.com/milo2005/AndroidCalculadora.git
+    2  git config --global http.proxy http://proxy.unicauca.edu.co:3128
+    3  git config --global https.proxy https://proxy.unicauca.edu.co:3128
+    4  node --version
+    5  npm --version
+   14  cd htdocs/GestorDeSalones/
+   20  cd xampp/htdocs/GestorDeSalones/
+   27  cd xampp/htdocs/GestorDeSalones/
+   32  ng g m components/auth/login -m=app --route login
+   32  ng g m components/coordinador -m=app --route coordinador
+   41  history > historial.txt

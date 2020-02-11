@@ -14,13 +14,18 @@ Pasos proceso de asignacion de salones
                     codigo de materia,
                     numero de estudiantes, 
                     Intensidad horaria, 
-                    Tipo de materia, 
                     prioridad de horario (mañana o tarde), 
                     restriccion de salon (elegir solo uno - salon normal, laboratorio, auditorio, salaSistemas, ) en caso que necesite por ej un auditorio, el profesor debe verificar la disponibilidad y hacer la debida solicitud
+                    
+                    DiasAsignados
+                    HorasAsignadas                    
+                    
+
                     nombre del profesor 
-                        identificacion del profesor
-                    nombre del programa,
+                        contacto/identificacion del profesor
+
                     nombre del cordinador, este campo se saca de la tabla de cordinador
+                        nombre del programa,
                         identificacion del cordinador
 
         Coordinador -> nombre
@@ -30,11 +35,15 @@ Pasos proceso de asignacion de salones
                     usuario
                     passwd
 
-        Profesor -> identificacion - puede ser el codigo de la U
+        Profesor o tambien se puede llamar Solicitud -> identificacion - puede ser el codigo de la U
                     nombre
                     correo
                     usuario
                     passwd
+                    salon-solicitud
+                    horaInicio-solicitud
+                    horaFin-solicitud
+                    rango de dias-solicitud
 
                     La idea (A FUTURO) con los profesores es solicitarle a SIMCA el correo y el codigo de los profesores. Luego 
                     para que el profesor pueda solicitar un salon, entonces, cuando el ingrese por primera vez se lo va a validar 
@@ -86,9 +95,16 @@ Tareas para el paso 1
 
 1. Crear sql para crear la base de datos (bd) inicialmente solo con la tabla de Materia, coordinador - estas dos tablas estas relacionadas
     Nota -  usar el sigueinte formato para las variables [tres primeras letras del nombre de la tabla][nombre de la variables] por ej -> matNombre, matCodigo, matIntensidadHoraria
+            
             Que pasa cuando programas comparten una materia - Quien define la capacidad de estudiantes?
             Hay algun caso en que un mismo cordinador defina las materias para mas de un programa?
+            El codigo de materias puede cambiar? 
+
             Como evitar la duplicidad en el nombre de materias?
+    [Profesor]
+            Para reducir la complejidad de la bd.. la tabla Profesor
+    
+
 2. Crear login para el cordinador - con la password encriptada
 3. Crear formulario (con validaciones necesarias) para llenar la tabla de Materia. -> Seria un CRUD de Materia
 4. Habilitar la opcion de cambiar contraseña para el cordinador
