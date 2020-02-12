@@ -8,4 +8,41 @@
    27  cd xampp/htdocs/GestorDeSalones/
    32  ng g m components/auth/login -m=app --route login
    32  ng g m components/coordinador -m=app --route coordinador
+        ng g m components/auth/login -m=app --route login
+        ng g m components/home -m=app --route home
+
    41  history > historial.txt
+
+   https://www.youtube.com/watch?v=pxLNaahJkLI&list=PL_9MDdjVuFjFPCptPjhr3iuzPK0_Nrm0s&index=3&t=0s
+   
+   PARA CREAR UN MODULO CON RUTA
+   ng g m components/auth/login -m=app --route login
+
+   PARA CREAR UN COMPONENTE/MODULO SIN RUTA - YA QUE SE UTILIZARA UNA VENTANA MODAL 
+   ng g c components/salon/nuevo-salon -m=app
+   ng g m components/salon/nuevo-salon -m=app
+
+   PARA CREAR UN LISTADO DE SALONES
+   ng g m components/salon/listar-salones -m=app --route salones
+
+   ng g c components/salon/mostrar
+----  
+   Este no se uso porque Materias se va usar con una ventana Modal
+            ng g c components/materia/mostrar
+----
+   AHORA LO MISMO PARA MATERIAS
+   ng g c components/materia/nueva-materia -m=app
+   ng g m components/materia/nueva-materia -m=app
+   ng g m components/materia/listar-materias -m=app --route materias
+
+   Instale el plugin
+        Angular Language Service
+        TSLint version Microsoft
+
+    Al colocar 
+        <router-outlet></router-outlet>
+    en app.components.html las rutas se renderizan
+
+    https://www.youtube.com/watch?v=w6ET2uOhyhg&list=PL_9MDdjVuFjFPCptPjhr3iuzPK0_Nrm0s&index=4
+
+   

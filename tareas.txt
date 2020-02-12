@@ -99,16 +99,22 @@ Tareas para el paso 1
             Que pasa cuando programas comparten una materia - Quien define la capacidad de estudiantes?
             Hay algun caso en que un mismo cordinador defina las materias para mas de un programa?
             El codigo de materias puede cambiar? 
-
             Como evitar la duplicidad en el nombre de materias?
     [Profesor]
             Para reducir la complejidad de la bd.. la tabla Profesor
-    
+
+    ESTO FALTARIA - No ejecute el comando porque aun no se define -- Bueno no he terminado de ver los tuto
+            ng g c components/salon/mostrar
+            ng g c components/materia/mostrar
+
+                
 
 2. Crear login para el cordinador - con la password encriptada
 3. Crear formulario (con validaciones necesarias) para llenar la tabla de Materia. -> Seria un CRUD de Materia
 4. Habilitar la opcion de cambiar contraseña para el cordinador
 5. Habilitar la opcion de cambiar los datos del cordinador
+
+
 
 ------------------------------------------------------------------------------------------------
 
