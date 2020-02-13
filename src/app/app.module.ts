@@ -8,6 +8,8 @@ import { NuevoSalonModule } from './components/salon/nuevo-salon/nuevo-salon.mod
 import { NuevaMateriaComponent } from './components/materia/nueva-materia/nueva-materia.component';
 import { NuevaMateriaModule } from './components/materia/nueva-materia/nueva-materia.module';
 import { MostrarComponent } from './components/salon/mostrar/mostrar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { MostrarComponent } from './components/salon/mostrar/mostrar.component';
     BrowserModule,
     AppRoutingModule,
     NuevoSalonModule,
-    NuevaMateriaModule
+    NuevaMateriaModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

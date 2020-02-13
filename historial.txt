@@ -26,10 +26,7 @@
    ng g m components/salon/listar-salones -m=app --route salones
 
    ng g c components/salon/mostrar
-----  
-   Este no se uso porque Materias se va usar con una ventana Modal
-            ng g c components/materia/mostrar
-----
+
    AHORA LO MISMO PARA MATERIAS
    ng g c components/materia/nueva-materia -m=app
    ng g m components/materia/nueva-materia -m=app
@@ -45,4 +42,19 @@
 
     https://www.youtube.com/watch?v=w6ET2uOhyhg&list=PL_9MDdjVuFjFPCptPjhr3iuzPK0_Nrm0s&index=4
 
-   
+   -------13 Febrero 2020
+
+   Se instalo el plugin de Angular Material 2
+        ng add @angular/material
+
+    Modifico los siguientes archivos
+        UPDATE src/main.ts (391 bytes)
+        UPDATE src/app/app.module.ts (1075 bytes)
+        UPDATE angular.json (3832 bytes)
+        UPDATE src/index.html (508 bytes)
+        UPDATE src/styles.css (181 bytes)
+
+    Se crea el modulo para Angular Material
+        ng g m material -m=app --flat
+        CREATE src/app/material.module.ts (194 bytes)
+        UPDATE src/app/app.module.ts (1147 bytes)
