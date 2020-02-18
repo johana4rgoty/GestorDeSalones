@@ -58,3 +58,18 @@
         ng g m material -m=app --flat
         CREATE src/app/material.module.ts (194 bytes)
         UPDATE src/app/app.module.ts (1147 bytes)
+
+
+    -------18 de Febrero de 2020
+    Creacion de Login con Material -> https://dzone.com/articles/angular-5-material-design-login-application
+    Luego en login.module.ts y app.module.ts se tuvo que agregar para poder utilizar ngModel en login.component.html
+        import { FormsModule } from '@angular/forms';
+
+    Quede en la conexion de MySQL con Angular
+        https://www.youtube.com/watch?v=m_VSSdAESBE&list=LL-BcnJ2SEv2aO0BEWVbrrAg&index=2&t=140s
+        https://www.youtube.com/watch?v=w5cCsoOs8SI
+        https://www.youtube.com/watch?v=w6ET2uOhyhg&t=1161s
+        https://www.youtube.com/playlist?list=PL_9MDdjVuFjFPCptPjhr3iuzPK0_Nrm0s
+        https://www.youtube.com/watch?v=RZ5fNK2oTf4&list=LL-BcnJ2SEv2aO0BEWVbrrAg&index=13
+        
+    
