@@ -73,3 +73,33 @@
         https://www.youtube.com/watch?v=RZ5fNK2oTf4&list=LL-BcnJ2SEv2aO0BEWVbrrAg&index=13
         
     
+    ------------------19 de Febrero de 2020
+    Se eliminan los componentes de ... Ya que con ventanas modales es mas facil
+        salon
+            mostrar
+            nuevo-salon
+        materia
+            nueva-materia
+    Para eliminar los componenetes se eliminar la carpeta y se borra su declaracion en app.module.ts
+
+
+    Se crearon los servicios de Salon y Material -- youtube.com/watch?v=W3zKlewOi1k&list=PL_9MDdjVuFjFPCptPjhr3iuzPK0_Nrm0s&index=4&t=0s
+        ng g s components/materia/materia --flat
+        ng g s components/salon/salon --flat
+
+    Quede en la conexion con MyQSL --  
+    https://youtu.be/m_VSSdAESBE?t=722
+    https://github.com/xcheko51x/CRUD-MySQL-PHP-Angular/blob/master/Angular/usuarios.service.ts
+
+
+    Y creando la vista para listar materias  
+    https://material.angular.io/components/table/overview
+
+    https://youtu.be/sMaR0qmW4mc?t=319        
+
+    C:\xampp\htdocs\GestorDeSalones\src\app\components\materia\materia.service.ts
+    C:\xampp\htdocs\GestorDeSalones\src\app\components\materia\listar-materias\listar-materias.module.ts
+    C:\xampp\htdocs\GestorDeSalones\src\app\app.module.ts
+    C:\xampp\htdocs\GestorDeSalones\src\app\components\materia\listar-materias\listar-materias.component.ts
+    C:\xampp\htdocs\GestorDeSalones\src\app\components\materia\listar-materias\listar-materias.component.html
+

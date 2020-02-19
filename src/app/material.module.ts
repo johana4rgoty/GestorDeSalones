@@ -9,7 +9,8 @@ import {
   MatTableModule,
   MatMenuModule,
   MatIconModule,
-  MatProgressSpinnerModule } from '@angular/material';
+  MatProgressSpinnerModule,
+  MatFormFieldModule } from '@angular/material';
 
 const myModule = [
   MatToolbarModule,
@@ -20,7 +21,8 @@ const myModule = [
   MatTableModule,
   MatMenuModule,
   MatIconModule,
-  MatProgressSpinnerModule ];
+  MatProgressSpinnerModule,
+  MatFormFieldModule ];
 
 @NgModule({
   declarations: [],

@@ -4,32 +4,29 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NuevoSalonComponent } from './components/salon/nuevo-salon/nuevo-salon.component';
-import { NuevoSalonModule } from './components/salon/nuevo-salon/nuevo-salon.module';
-import { NuevaMateriaComponent } from './components/materia/nueva-materia/nueva-materia.component';
-import { NuevaMateriaModule } from './components/materia/nueva-materia/nueva-materia.module';
-import { MostrarComponent } from './components/salon/mostrar/mostrar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+
+import { HttpClientModule } from '@angular/common/http';
+import { MateriaService } from './components/materia/materia.service';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NuevoSalonComponent,
-    NuevaMateriaComponent,
-    MostrarComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NuevoSalonModule,
-    NuevaMateriaModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    MateriaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

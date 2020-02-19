@@ -191,3 +191,4 @@ Acciones de tipo usuario:
 - (Trabajo futuro) Solicitudes a salón (cambiar 'dia' por 'fecha' en 'Tiempo')
 
 ------------------------------------------------------------------------------------------------
+ 
