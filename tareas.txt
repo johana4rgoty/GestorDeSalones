@@ -14,7 +14,7 @@ Pasos proceso de asignacion de salones
                     codigo de materia,
                     numero de estudiantes, 
                     Intensidad horaria, 
-                    prioridad de horario (mañana o tarde), 
+                    prioridad de horario (mañana o tarde),  
                     restriccion de salon (elegir solo uno - salon normal, laboratorio, auditorio, salaSistemas, ) en caso que necesite por ej un auditorio, el profesor debe verificar la disponibilidad y hacer la debida solicitud
                     
                     DiasAsignados

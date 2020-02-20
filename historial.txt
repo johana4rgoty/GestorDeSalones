@@ -97,9 +97,17 @@
 
     https://youtu.be/sMaR0qmW4mc?t=319        
 
-    C:\xampp\htdocs\GestorDeSalones\src\app\components\materia\materia.service.ts
-    C:\xampp\htdocs\GestorDeSalones\src\app\components\materia\listar-materias\listar-materias.module.ts
-    C:\xampp\htdocs\GestorDeSalones\src\app\app.module.ts
-    C:\xampp\htdocs\GestorDeSalones\src\app\components\materia\listar-materias\listar-materias.component.ts
-    C:\xampp\htdocs\GestorDeSalones\src\app\components\materia\listar-materias\listar-materias.component.html
+    
+    ------20 de Febrero --
+    console.log('Inicio mensaje');
+    console.log();
+    console.log('Fin mensaje');
+
+    tengo el error que el archivo OntenerMaterias.php no se si hace la consulta
+    Quede en la conexion con la bd para traer las materias 
+
+    https://github.com/xcheko51x/CRUD-MySQL-PHP-Angular/blob/master/Angular/app.component.html
+    https://therichpost.com/angular-8-with-mysql-database-working-example/
+
+    
 

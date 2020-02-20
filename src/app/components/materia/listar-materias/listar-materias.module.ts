@@ -5,8 +5,8 @@ import { ListarMateriasRoutingModule } from './listar-materias-routing.module';
 import { ListarMateriasComponent } from './listar-materias.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { MateriaService } from './../materia.service';
 import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [ListarMateriasComponent],
@@ -15,10 +15,7 @@ import { FormsModule } from '@angular/forms';
     ListarMateriasRoutingModule,
     FormsModule,
     HttpClientModule
-  ],
-  providers: {
-    MateriaService
-  },
+  ]
 })
 export class ListarMateriasModule { }
 

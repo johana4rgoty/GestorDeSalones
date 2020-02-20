@@ -1,1 +1,46 @@
-<p>Listar Materias</p>
+<div align="center">
+    <h1>LISTA DE MATERIAS</h1>
+    <!-- <table border="1" *ngIf="hayRegistros(); else sin"> -->
+    <table border="1">
+        <tr>
+        <td>ID</td>
+        <td>CODIGO</td>
+        <td>NOMBRE</td>
+        <td>NOMBRE_PROFESOR</td>
+        <td>ID_COORDINADOR</td>
+        <td>BORRAR</td>
+        <td>VER</td>
+      </tr>
+      <tr *ngFor="let materia of materias">
+        <td> {{materia.matId }} </td>
+        <td> {{materia.matCodigo }} </td>
+        <td> {{materia.matNombre }} </td>
+        <td> {{materia.matNombreProfesor }} </td>
+        <td> {{materia.cooridnador_cooId }} </td>
+        <td> <button (click)="borrarMateria(materia.matId)"> Borrar </button> </td>
+        <td> <button (click)="buscarMateria(materia.matId)"> Seleccionar </button> </td>
+      </tr>
+    </table>
+  
+    <ng-template #sin>
+      <p>No hay materias registradas.</p>
+    </ng-template>
+
+    <div>
+      <p> Codigo: <input type="text" [(ngModel)]="materia.matCodigo" /> </p>
+      <p> Nombre: <input type="text" [(ngModel)]="materia.matNombre" /> </p>
+      <p> Estudiantes: <input type="number" [(ngModel)]="materia.matEstudiantes" /> </p>
+      <p> Intensidad: <input type="number" [(ngModel)]="materia.matIntensidadHoraria" /> </p>
+      <p> Jornada: <input type="text" [(ngModel)]="materia.matPrioridadHorario" /> </p>
+      <p> Tipo Salon: <input type="text" [(ngModel)]="materia.matRestriccionSalon" /> </p>
+      <p> Nombre Profesor: <input type="text" [(ngModel)]="materia.matNombreProfesor" /> </p>
+      <p> Contacto Profesor: <input type="text" [(ngModel)]="materia.matContactoProfesor" /> </p>
+      <p> Cod Coordinador: <input type="number" [(ngModel)]="materia.cooridnador_cooId" /> </p>
+      
+      <p> 
+        <button (click)="crearMateria()"> AGREGAR </button> 
+        <button (click)="editarMateria()"> MODIFICAR </button> 
+      </p>
+    </div>
+    
+  </div>

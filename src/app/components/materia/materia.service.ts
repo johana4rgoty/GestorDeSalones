@@ -18,12 +18,12 @@ export class MateriaService {
     return this.http.post(`${this.URL}CrearMateria.php`, JSON.stringify(materia));
   }
 
-  borrarMateria(idMateria: number) {
-    return this.http.get(`${this.URL}BorrarMateria.php?idMateria=${idMateria}`);
+  borrarMateria(matId: number) {
+    return this.http.get(`${this.URL}BorrarMateria.php?matId=${matId}`);
   }
 
-  buscarMateria(idMateria: number) {
-    return this.http.get(`${this.URL}BuscarMateria.php?idMateria=${idMateria}`);
+  buscarMateria(matId: number) {
+    return this.http.get(`${this.URL}BuscarMateria.php?matId=${matId}`);
   }
 
   editarMateria(materia) {
