@@ -19,3 +19,14 @@
         - Solicitudes (trabajo futuro)
         - crear (para admin y coordinadores): Datos para crear Objeto
 </p>
+
+<table>
+    <tr>
+      <th>Nombre</th>
+      <th>No Estudiantes</th>
+      
+    </tr>
+    <tr *ngFor="let mydata of data[0]">
+      <td>{{mydata.matNombre}}</td>
+      <td>{{mydata.matEstudiantes}}</td>
+    </tr>

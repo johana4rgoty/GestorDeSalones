@@ -103,11 +103,18 @@
     console.log();
     console.log('Fin mensaje');
 
-    tengo el error que el archivo OntenerMaterias.php no se si hace la consulta
+    tengo el error que el archivo ObtenerMaterias.php no se si hace la consulta
     Quede en la conexion con la bd para traer las materias 
 
     https://github.com/xcheko51x/CRUD-MySQL-PHP-Angular/blob/master/Angular/app.component.html
     https://therichpost.com/angular-8-with-mysql-database-working-example/
 
-    
+    https://www.youtube.com/watch?v=d-kH9XDypjg&list=PLGt1lxwGVOI6ldnf3n_cxVmSYZqOSCQbK
 
+---25 de Febrero 2020
+    Se configuro el proxy para la application
+
+    1. Se crea archivo proxy.config.json
+    2. Se re configura en el package.json la siguiente linea
+        "start": "ng serve --proxy-config proxy.config.json"
+    3. Se ejecuta npm start

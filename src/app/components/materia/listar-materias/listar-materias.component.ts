@@ -29,7 +29,9 @@ export class ListarMateriasComponent implements OnInit {
   }
 
   obtenerMaterias() {
-    this.MateriaServicio.obtenerMaterias().subscribe(
+    console.log('listar-materias.component - Mensaje');
+    this.MateriaServicio.obtenerMaterias()
+    .subscribe(
       result => this.materias = result
     );
   }
