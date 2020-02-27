@@ -1,7 +1,6 @@
 <div align="center">
     <h1>LISTA DE MATERIAS</h1>
-    <!-- <table border="1" *ngIf="hayRegistros(); else sin"> -->
-    <table border="1">
+    <table border="1" *ngIf="hayRegistros(); else sin">
         <tr>
         <td>ID</td>
         <td>CODIGO</td>
@@ -12,11 +11,11 @@
         <td>VER</td>
       </tr>
       <tr *ngFor="let materia of materias">
-        <td> {{materia.matId }} </td>
-        <td> {{materia.matCodigo }} </td>
-        <td> {{materia.matNombre }} </td>
-        <td> {{materia.matNombreProfesor }} </td>
-        <td> {{materia.cooridnador_cooId }} </td>
+        <td> {{ materia.matId }} </td>
+        <td> {{ materia.matCodigo }} </td>
+        <td> {{ materia.matNombre }} </td>
+        <td> {{ materia.matNombreProfesor }} </td>
+        <td> {{ materia.coordinador_cooId }} </td>
         <td> <button (click)="borrarMateria(materia.matId)"> Borrar </button> </td>
         <td> <button (click)="buscarMateria(materia.matId)"> Seleccionar </button> </td>
       </tr>
@@ -35,7 +34,7 @@
       <p> Tipo Salon: <input type="text" [(ngModel)]="materia.matRestriccionSalon" /> </p>
       <p> Nombre Profesor: <input type="text" [(ngModel)]="materia.matNombreProfesor" /> </p>
       <p> Contacto Profesor: <input type="text" [(ngModel)]="materia.matContactoProfesor" /> </p>
-      <p> Cod Coordinador: <input type="number" [(ngModel)]="materia.cooridnador_cooId" /> </p>
+      <p> Cod Coordinador: <input type="number" [(ngModel)]="materia.coordinador_cooId" /> </p>
       
       <p> 
         <button (click)="crearMateria()"> AGREGAR </button> 

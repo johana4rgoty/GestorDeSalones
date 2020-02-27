@@ -118,3 +118,14 @@
     2. Se re configura en el package.json la siguiente linea
         "start": "ng serve --proxy-config proxy.config.json"
     3. Se ejecuta npm start
+
+---27 de Febrero 2020
+    Se logro solucionar el error de JSON.Parse .. era eliminar la linea
+        header('Content-Type: application/json');
+    
+    Esta linea sirve para fijar el numero del contador 
+        ALTER TABLE gestorsalones.materia AUTO_INCREMENT = 13;
+
+---Continuar con el login - Crear secion de Coordinador
+
+    

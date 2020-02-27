@@ -28,13 +28,15 @@ export class ListarMateriasComponent implements OnInit {
     this.obtenerMaterias();
   }
 
+  // https://github.com/xcheko51x/CRUD-MySQL-PHP-Angular
+  // https://www.youtube.com/watch?v=m_VSSdAESBE&list=LL-BcnJ2SEv2aO0BEWVbrrAg&index=10&t=0s
   obtenerMaterias() {
-    console.log('listar-materias.component - Mensaje');
     this.MateriaServicio.obtenerMaterias()
     .subscribe(
       result => this.materias = result
     );
   }
+
   crearMateria() {
     this.MateriaServicio.crearMateria(this.materia).subscribe(
       datos => {
