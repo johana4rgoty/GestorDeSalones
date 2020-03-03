@@ -125,7 +125,11 @@
     
     Esta linea sirve para fijar el numero del contador 
         ALTER TABLE gestorsalones.materia AUTO_INCREMENT = 13;
+--3 Marzo de 2020
+    Se añadio la barra de menu
+    ng g c shared/components/toolbar -m=material
 
----Continuar con el login - Crear secion de Coordinador
+    https://youtu.be/DxplE-R2wwM?t=1382
+    Quede en la logica del login
 
-    
+      

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
+import { AuthService } from './../../../shared/services/auth.service';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +10,7 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private AuthServicio: AuthService) { }
 
   // tslint:disable-next-line: member-ordering
   username: string;
@@ -26,3 +28,4 @@ export class LoginComponent implements OnInit {
   }
 
 }
+https://youtu.be/DxplE-R2wwM?t=1382

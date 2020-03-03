@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MateriaService } from './../materia.service';
+import { MateriaService } from './../../../shared/services/materia.service';
 
 @Component({
   selector: 'app-listar-materias',

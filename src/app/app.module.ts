@@ -8,13 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
 import { HttpClientModule } from '@angular/common/http';
-import { MateriaService } from './components/materia/materia.service';
-
+import { MateriaService } from './shared/services/materia.service';
+import { SalonService } from './shared/services/salon.service';
+import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -22,10 +25,12 @@ import { MateriaService } from './components/materia/materia.service';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
-    MateriaService
+    MateriaService,
+    SalonService
   ],
   bootstrap: [AppComponent]
 })

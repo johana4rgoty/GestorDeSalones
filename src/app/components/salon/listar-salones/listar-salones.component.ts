@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SalonService } from './../../../shared/services/salon.service';
 
 @Component({
   selector: 'app-listar-salones',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarSalonesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private SalonServicio: SalonService) { }
 
   ngOnInit() {
   }
