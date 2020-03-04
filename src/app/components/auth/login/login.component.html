@@ -1,14 +1,14 @@
 <mat-card>
   <mat-card-title>Login</mat-card-title>
   <mat-card-content>
-    <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+    <form [formGroup]="loginForm" (ngSubmit)="logIn(loginForm.value)">
       <p>
         <mat-form-field>
           <input
             type="text"
             matInput
             placeholder="Username"
-            formControlName="email"
+            formControlName="cooUsuario"
           />
         </mat-form-field>
       </p>
@@ -18,7 +18,7 @@
             type="password"
             matInput
             placeholder="Password"
-            formControlName="password"
+            formControlName="cooPasswd"
           />
         </mat-form-field>
       </p>
@@ -26,7 +26,7 @@
     </form>
   </mat-card-content>
 </mat-card>
-
+<!--
 <mat-card class="example-card">
   <mat-card-header>
     <mat-card-title>Login</mat-card-title>
@@ -52,3 +52,4 @@
     <button mat-raised-button (click)="login()" color="primary">Login</button>
   </mat-card-actions>
 </mat-card>
+-->

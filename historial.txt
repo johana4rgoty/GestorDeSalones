@@ -132,4 +132,12 @@
     https://youtu.be/DxplE-R2wwM?t=1382
     Quede en la logica del login
 
+--4 de Marzo de 2020
+    Quede en el try/catch del login
+    https://codingpotions.com/angular-login-sesion
+    https://justdigital.agency/login-y-autenticacion-con-angular/
+
+    https://jsonworld.com/demo/angular-8-user-registration-login-example-and-tutorial
+    https://github.com/cornflourblue/angular-8-registration-login-example
+
       

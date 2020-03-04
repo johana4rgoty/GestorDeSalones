@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Observable, of, throwError } from 'rxjs';
-import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
-import { catchError, tap, map } from 'rxjs/operators';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+// import { HttpErrorResponse } from '@angular/common/http';
+// import { Observable, of, throwError } from 'rxjs';
+// import { catchError, tap, map } from 'rxjs/operators';
 // import { Observable } from 'rxjs/Observable';
 // import { map, finalize } from 'rxjs/operators';
 // import { MateriaI } from '../../shared/models/materia.interface';
 
-const httpOptions = {
+/* const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json'})
-};
+}; */
 
 @Injectable({
   providedIn: 'root'

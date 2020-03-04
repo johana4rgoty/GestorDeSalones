@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from './../../../shared/services/auth.service';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { CoordinadorI } from '../../../shared/models/coordinador.interface';
+
+import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -10,22 +13,30 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router, private AuthServicio: AuthService) { }
+  constructor( private router: Router, private AuthServicio: AuthService) { }
 
-  // tslint:disable-next-line: member-ordering
-  username: string;
-  passwrd: string;
+  loginForm = new FormGroup({
+    cooUsuario: new FormControl('', Validators.required),
+    cooPasswd: new FormControl('', Validators.required)
+  });
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  login(): void {
-    if (this.username === 'admin' && this.passwrd === 'admin'){
-     this.router.navigate(['home']);
-    } else {
-      alert('Credenciales Invalidas');
-    }
+  logIn(form: CoordinadorI) {
+    // , event: Event
+    const { cooUsuario, cooPasswd } = form;
+    // event.preventDefault(); // Avoid default action for the submit button of the login form
+    // Calls service to login user to the api rest
+    this.AuthServicio.login(cooUsuario, cooPasswd).pipe(first())
+    .subscribe(
+      res => {
+       console.log(res);
+      },
+      error => {
+        console.error(error);
+        return;
+      });
+    this.router.navigate(['/materias']);
   }
 
 }
-https://youtu.be/DxplE-R2wwM?t=1382
