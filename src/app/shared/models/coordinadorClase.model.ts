@@ -8,7 +8,7 @@ export class CoordinadorClase {
 
     constructor(id: number, nombre: string, correo: string, usuario: string, pwd: string, programa: string) {
     this.cooId = id;
-    this.cooNombre = name;
+    this.cooNombre = nombre;
     this.cooCorreo = correo;
     this.cooUsuario = usuario;
     this.cooPasswd = pwd;

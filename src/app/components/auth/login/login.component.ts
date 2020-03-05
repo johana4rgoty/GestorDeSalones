@@ -27,16 +27,19 @@ export class LoginComponent implements OnInit {
     const { cooUsuario, cooPasswd } = form;
     // event.preventDefault(); // Avoid default action for the submit button of the login form
     // Calls service to login user to the api rest
+
     this.AuthServicio.login(cooUsuario, cooPasswd).pipe(first())
     .subscribe(
       res => {
-       console.log(res);
+        if (res['resultadoAPI'] === 'OK') {
+          this.router.navigate(['/materias']);
+        } else {
+          return;
+        }
       },
       error => {
         console.error(error);
         return;
       });
-    this.router.navigate(['/materias']);
   }
-
 }

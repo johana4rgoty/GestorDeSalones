@@ -140,4 +140,7 @@
     https://jsonworld.com/demo/angular-8-user-registration-login-example-and-tutorial
     https://github.com/cornflourblue/angular-8-registration-login-example
 
-      
+    
+--5 de Marzo de 2020
+    Se arreglo el login... de manera que si esta mal las credenciales... no redirije
+    Continuar con la creacion de la sesion 
