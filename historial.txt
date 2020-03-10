@@ -144,3 +144,12 @@
 --5 de Marzo de 2020
     Se arreglo el login... de manera que si esta mal las credenciales... no redirije
     Continuar con la creacion de la sesion 
+
+--10 de Marzo de 2020
+    Crear la seccion de Coordinador
+        https://codingpotions.com/angular-login-sesion
+
+    Se crea el Servicio de Coordinador
+        ng g s src/app/shared/services/coordinador --flat
+    
+    

@@ -6,8 +6,18 @@
     <a routerLink="/salones" routerLinkActive="active">
         <button mat-button>Salones</button> </a>
     <span class="fill-remaining-space"></span>
-    <a routerLink="/login" routerLinkActive="active">
-        <button mat-button>Login</button> </a>
+
+    <a *ngIf="AuthSvc.userData$ | async; else showLogin" (click)="onLogOut()">
+        <button mat-button>Logout</button>
+    </a>
+        
+    <ng-template #showLogin>
+        <a routerLink="/login" routerLinkActive="active">
+            <button mat-button>Login</button>
+        </a>
+    </ng-template>
+        
     <a routerLink="/contacto" routerLinkActive="active">
         <button mat-button>Contacto</button> </a>
 </mat-toolbar>
+

@@ -8,7 +8,7 @@ import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
+// import { FormsModule } from '@angular/forms';
 
 import { MateriaService } from './shared/services/materia.service';
 import { SalonService } from './shared/services/salon.service';
@@ -24,7 +24,6 @@ import { AuthService } from './shared/services/auth.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule,
     HttpClientModule,
     ReactiveFormsModule
   ],
