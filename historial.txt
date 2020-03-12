@@ -151,5 +151,11 @@
 
     Se crea el Servicio de Coordinador
         ng g s src/app/shared/services/coordinador --flat
+
+--12 de Marzo de 2020
+    -> Login - Logout terminado de Coordinador
+    -> Se agrego tipoUsuario a la consulta de usuario - ver login.component.ts ... esto para identificar si es coordinador adminS o profe
+    -> 
+
     
     

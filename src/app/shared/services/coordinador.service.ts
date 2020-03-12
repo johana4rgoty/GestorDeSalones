@@ -1,20 +1,16 @@
 import { Injectable } from '@angular/core';
-import { CoordinadorClase } from '../models/coordinadorClase.model';
+import { UsuarioClase } from '../models/usuarioClase.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CoordinadorService {
 
-  private isUserLoggedIn;
-  public usserLogged: CoordinadorClase;
+  public usserLogged: UsuarioClase;
 
-  constructor() {
-    this.isUserLoggedIn = false;
-  }
+  constructor() {}
 
-  setUserLoggedIn(user: CoordinadorClase) {
-    this.isUserLoggedIn = true;
+  setUserLoggedIn(user: UsuarioClase) {
     this.usserLogged = user;
     localStorage.setItem('currentUser', JSON.stringify(user));
   }

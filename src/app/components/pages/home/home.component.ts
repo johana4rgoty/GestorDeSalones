@@ -10,10 +10,10 @@ export class HomeComponent implements OnInit {
 
   data = [];
   constructor(private http: HttpClient) {
-    this.http.get('http://localhost/gestorsalones.php').subscribe(data => {
+    /* this.http.get('http://localhost/gestorsalones.php').subscribe(data => {
     this.data.push(data);
     console.log(this.data);
-    }, error => console.error(error));
+    }, error => console.error(error)); */
   }
 
   ngOnInit() {

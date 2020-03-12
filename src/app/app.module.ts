@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MateriaService } from './shared/services/materia.service';
 import { SalonService } from './shared/services/salon.service';
 import { AuthService } from './shared/services/auth.service';
+import { CoordinadorService } from './shared/services/coordinador.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AuthService } from './shared/services/auth.service';
   providers: [
     MateriaService,
     SalonService,
-    AuthService
+    AuthService,
+    CoordinadorService
 
   ],
   bootstrap: [AppComponent]

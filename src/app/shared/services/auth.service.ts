@@ -2,14 +2,16 @@ import { Injectable, Output, EventEmitter } from '@angular/core';
 // import { CoordinadorI } from '../../shared/models/coordinador.interface'; 
 // import { CoordinadorClase } from '../models/coordinadorClase.model';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { UsuarioClase } from '../models/usuarioClase.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   private URL = 'http://localhost:80/api/auth/';
-  
+  public statusLogin = false;
+  public usserLogged: UsuarioClase;
+
   constructor(private http: HttpClient) {}
 
   login(username: string, password: string) {
@@ -20,7 +22,18 @@ export class AuthService {
   }
 
   logOut() {
-    // this.afAuth.auth.signOut();
+    localStorage.removeItem('currentUser');
+    this.statusLogin = false;
+  }
+
+  setUserLoggedIn(user: UsuarioClase) {
+    this.usserLogged = user;
+    localStorage.setItem('currentUser', JSON.stringify(user));
+    this.statusLogin = true;
+  }
+
+  getUserLoggedIn() {
+    return JSON.parse(localStorage.getItem('currentUser'));
   }
 
 }
